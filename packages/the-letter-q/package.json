@@ -1,0 +1,12 @@
+{
+  "name": "the-letter-q",
+  "version": "1.0.0",
+  "description": "The letter q",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [],
+  "author": "Jordan Gensler <jordangens@gmail.com>",
+  "license": "MIT"
+}

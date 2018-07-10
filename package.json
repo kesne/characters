@@ -1,0 +1,22 @@
+{
+  "name": "letters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "lerna run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kesne/letters.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kesne/letters/issues"
+  },
+  "homepage": "https://github.com/kesne/letters#readme",
+  "devDependencies": {
+    "lerna": "^2.11.0"
+  }
+}

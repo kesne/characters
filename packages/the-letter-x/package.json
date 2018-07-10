@@ -1,0 +1,12 @@
+{
+  "name": "the-letter-x",
+  "version": "1.0.0",
+  "description": "The letter x",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [],
+  "author": "Jordan Gensler <jordangens@gmail.com>",
+  "license": "MIT"
+}

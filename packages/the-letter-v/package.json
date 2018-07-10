@@ -1,0 +1,12 @@
+{
+  "name": "the-letter-v",
+  "version": "1.0.0",
+  "description": "The letter v",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [],
+  "author": "Jordan Gensler <jordangens@gmail.com>",
+  "license": "MIT"
+}
