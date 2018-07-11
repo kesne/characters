@@ -1,1 +1,0 @@
-Exposes the letter "t".

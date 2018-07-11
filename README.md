@@ -1,3 +1,3 @@
-# letters
+# Characters
 
-Some modules exposing letters.
+Some modules exposing characters.

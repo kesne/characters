@@ -1,0 +1,17 @@
+{
+  "name": "@characters/s-uppercase",
+  "version": "1.0.0",
+  "description": "The uppercase character S",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kesne/characters.git"
+  },
+  "homepage": "https://github.com/kesne/characters#readme",
+  "keywords": [],
+  "author": "Jordan Gensler <jordangens@gmail.com>",
+  "license": "MIT"
+}

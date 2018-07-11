@@ -1,22 +1,20 @@
 {
-  "name": "letters",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "characters",
   "scripts": {
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "stamp-alphabet": "node create-character-module b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z",
+    "stamp-uppercase-alphabet": "node create-character-module B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z -uppercase"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kesne/letters.git"
+    "url": "git+https://github.com/kesne/characters.git"
   },
-  "author": "",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kesne/letters/issues"
+    "url": "https://github.com/kesne/characters/issues"
   },
-  "homepage": "https://github.com/kesne/letters#readme",
+  "homepage": "https://github.com/kesne/characters#readme",
   "devDependencies": {
     "lerna": "^2.11.0"
-  }
+  },
+  "private": true
 }
