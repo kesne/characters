@@ -1,6 +1,6 @@
 {
   "name": "@characters/y",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "The character y",
   "main": "index.js",
   "scripts": {

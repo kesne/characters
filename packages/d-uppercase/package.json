@@ -1,6 +1,6 @@
 {
   "name": "@characters/d-uppercase",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "The uppercase character D",
   "main": "index.js",
   "scripts": {
