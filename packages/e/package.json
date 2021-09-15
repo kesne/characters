@@ -1,10 +1,11 @@
 {
   "name": "@characters/e",
   "version": "1.1.2",
-  "description": "The character e",
-  "main": "index.js",
+  "description": "The character 'e'",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "node test"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
