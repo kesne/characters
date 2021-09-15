@@ -2,6 +2,8 @@
   "name": "characters-monorepo",
   "scripts": {
     "test": "jest",
+    "build": "lerna run build",
+    "prepublishOnly": "yarn build",
     "stamp": "ts-node ./scripts/stamp.ts"
   },
   "repository": {

@@ -1,1 +1,3 @@
-Exposes the character "a".
+# @characters/space
+
+Exposes the character " ".

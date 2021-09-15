@@ -1,10 +1,11 @@
 {
   "name": "@characters/r-uppercase",
   "version": "1.1.2",
-  "description": "The uppercase character R",
-  "main": "index.js",
+  "description": "The character 'R'",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "node test"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
