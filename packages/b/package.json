@@ -1,6 +1,6 @@
 {
   "name": "@characters/b",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "The character 'b'",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
