@@ -62,7 +62,8 @@ const MODULES = {
 
   "grave-accent": "`",
   space: " ",
-  backslash: "\\",
+  // NOTE: Backslash needs two backslashes to escape itself during replacement:
+  backslash: "\\\\",
   semicolon: ";",
   slash: "/",
   tilde: "~",
@@ -74,9 +75,10 @@ const MODULES = {
   asterisk: "*",
   "full-stop": ".",
   comma: ",",
+  // These are escaped to avoid issues during replacement:
   apostrophe: "'",
-  "quotation-mark": '"',
-  'exclamation-mark': '!',
+  "quotation-mark": '\\"',
+  "exclamation-mark": "!",
   "left-parenthesis": "(",
   "right-parenthesis": ")",
   "left-square-bracket": "[",
@@ -125,10 +127,10 @@ async function copyFiles(dir: string, pkgName: string, char: string) {
       const original = await fs.readFile(path.join(dir, file.name), "utf8");
 
       const replaced = original
-        .replace("/a", `/${pkgName}`)
-        .replace(" a", ` ${char}`)
-        .replace("'a'", `'${char}'`)
-        .replace('"a"', `"${char}"`);
+        .replace("/a", () => `/${pkgName}`)
+        .replace(" a", () => ` ${char}`)
+        .replace("'a'", () => `'${char}'`)
+        .replace('"a"', () => `"${char}"`);
 
       await fs.writeFile(path.join(mirrorDir, file.name), replaced);
     }

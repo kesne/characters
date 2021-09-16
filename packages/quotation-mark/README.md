@@ -1,3 +1,3 @@
 # @characters/quotation-mark
 
-Exposes the character """.
+Exposes the character "\"".

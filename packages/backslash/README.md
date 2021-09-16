@@ -1,3 +1,3 @@
 # @characters/backslash
 
-Exposes the character "\".
+Exposes the character "\\".
