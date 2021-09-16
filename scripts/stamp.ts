@@ -60,9 +60,59 @@ const MODULES = {
   "y-uppercase": "Y",
   "z-uppercase": "Z",
 
+  "grave-accent": "`",
   space: " ",
+  // NOTE: Backslash needs two backslashes to escape itself during replacement:
+  backslash: "\\\\",
   semicolon: ";",
+  slash: "/",
+  tilde: "~",
+  "question-mark": "?",
+  "less-than-sign": "<",
+  "greater-than-sign": ">",
   colon: ":",
+  ampersand: "&",
+  asterisk: "*",
+  "full-stop": ".",
+  comma: ",",
+  // These are escaped to avoid issues during replacement:
+  apostrophe: "'",
+  "quotation-mark": '\\"',
+  "exclamation-mark": "!",
+  "left-parenthesis": "(",
+  "right-parenthesis": ")",
+  "left-square-bracket": "[",
+  "right-square-bracket": "]",
+  "left-curly-bracket": "{",
+  "right-curly-bracket": "}",
+  "number-sign": "#",
+  "percent-sign": "%",
+  "interted-exclamation-mark": "¡",
+  "inverted-question-mark": "¿",
+  "multiplication-sign": "×",
+  "division-sign": "÷",
+  "cent-sign": "¢",
+  "pound-sign": "£",
+  "dollar-sign": "$",
+  "yen-sign": "¥",
+  "broken-bar": "¦",
+  "section-sign": "§",
+  diaeresis: "¨",
+  "copyright-sign": "©",
+  "left-pointing-double-angle-quotation-mark": "«",
+  "not-sign": "¬",
+  "registered-sign": "®",
+  macron: "¯",
+  "degree-sign": "°",
+  "plus-minus-sign": "±",
+  "plus-sign": "+",
+  "minus-sign": "-",
+  "at-sign": "@",
+  "acute-accent": "´",
+  "micro-sign": "μ",
+  "pilcrow-sign": "¶",
+  "middle-dot": "·",
+  "right-pointing-double-angle-quotation-mark": "»",
 };
 
 async function copyFiles(dir: string, pkgName: string, char: string) {
@@ -77,10 +127,10 @@ async function copyFiles(dir: string, pkgName: string, char: string) {
       const original = await fs.readFile(path.join(dir, file.name), "utf8");
 
       const replaced = original
-        .replace("/a", `/${pkgName}`)
-        .replace(" a", ` ${char}`)
-        .replace("'a'", `'${char}'`)
-        .replace('"a"', `"${char}"`);
+        .replace("/a", () => `/${pkgName}`)
+        .replace(" a", () => ` ${char}`)
+        .replace("'a'", () => `'${char}'`)
+        .replace('"a"', () => `"${char}"`);
 
       await fs.writeFile(path.join(mirrorDir, file.name), replaced);
     }
