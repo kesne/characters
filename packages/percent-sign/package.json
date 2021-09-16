@@ -1,0 +1,21 @@
+{
+  "name": "@characters/percent-sign",
+  "version": "2.0.0",
+  "description": "The character '%'",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kesne/characters.git"
+  },
+  "homepage": "https://github.com/kesne/characters#readme",
+  "keywords": [],
+  "author": "Jordan Gensler <jordangens@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
